@@ -63,8 +63,8 @@ void setup() {
 	// using default min/max of 1000us and 2000us
 	// different servos may require different min/max settings
 	// for an accurate 0 to 180 sweep
-  Serial.begin(9600);
-   pinMode(inputPin,INPUT);
+  	Serial.begin(9600);
+  	 pinMode(inputPin,INPUT);
 }
 void loop() {
    
@@ -75,7 +75,7 @@ void loop() {
       myservo.write(pos);
       delay(500);
     }
-   if(pos == 270)
+   if(pos > 180)
       pos = 0;
       myservo.write(pos);
       delay(500);
