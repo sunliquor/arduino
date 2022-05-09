@@ -1,7 +1,7 @@
 #include <WiFi.h>
 
-const char* ssid = "robin";  
-const char* password = "mochi0607";
+const char* ssid = "0";  
+const char* password = "0";
 
 WiFiServer server(80);
 String header;
